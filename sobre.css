@@ -1,0 +1,255 @@
+
+:root {
+    --cor-primaria:#000000;
+    --cor-secundaria:#f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-quaternaria: #2f4f4f;
+    --cor-alternativa: #152424 ;
+    --cor-enfase: #567878;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: 'inter', sans-serif;
+}
+
+.topo{
+    max-width: 893px;
+    margin: 0 auto;
+    padding-top: 16px;
+
+}
+.topo-menu{
+    padding: 8px 14px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.topo-menu:hover{
+    background-color: var(--cor-quaternaria);
+}
+img{
+    width: 290px;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.container-principal-sobre{
+    max-width: 894px;
+    margin: 0 auto;
+    padding: 80px 0px 5px 0px;
+    display: flex;
+    margin-bottom: 60px;
+}
+.section-conteudo{
+    position: relative;
+    padding: 1px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    gap: 80px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.titulo-sobre{
+    text-align: left;
+    margin-bottom: 25px;
+    color: var(--cor-enfase);
+}
+.content{
+    width: 60%;
+    display: flex;
+    padding: 0px 15px 0px 10px;
+    flex-direction: column;
+}
+.container-foto{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preenchimento{
+    background-color: var(--cor-primaria);
+    
+    width: 100%;
+}
+.content li{
+   font-size: 12px;
+   margin-left: 60px;
+}
+.content li p{
+   font-size: 12px;
+}
+h3{
+    margin: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+h4{
+    margin: 10px;
+    font-size: 12px;
+}
+h1{
+    font-size: 28px;
+    margin: 0;
+}
+.section-conteudo p{      
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 5px 0;
+}
+ 
+.div-links{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-titulo{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "krona One", sans-serif;
+}
+.div-links a{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap: 6px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px 54px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 12px;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+
+}
+.div-links a:hover{
+    background-color: var(--cor-quaternaria);
+}
+.img-icone{
+    width: 20px;
+}
+.rodape{
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.rodape p{
+    margin: 0;
+    padding: 6px;
+}
+
+@media (max-width: 600px) {
+    .container-principal-sobre{
+        margin: 0 auto;
+        padding: 50px 0px 10px 10px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .section-conteudo{
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+    }
+    .titulo-sobre{
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        padding-right: 20px;
+        flex-direction: column;
+        
+
+    }
+    header{
+        background-color: var(--cor-alternativa);
+        width: 100vw;
+    }
+    .topo{
+        width: 100vw;
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
+    }
+    .topo-menu{
+        font-size: 18px;
+    }
+    img{
+        width: 210px;
+    }
+    .container-foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 12px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .section-conteudo p{      
+        font-size: 16px;
+        margin: 15px 0;
+        padding: 5px 1px;
+    }
+
+    ul{
+        width: 90%;
+        padding-left: 30px;
+        text-align: left;
+    }
+    .content{
+        width: 100vw;
+    }
+
+    .content li{
+        font-size: 15px;
+        margin: 10px;
+     }
+     .content li p{
+        font-size: 15px;
+        margin: 5px;
+     }
+     h3{
+         margin: 10px;
+         font-size: 18px;
+     }
+     h4{
+         margin: 5px;
+         font-size: 16px;
+     }
+    
+     .section-conteudo p{      
+         font-size: 18px;
+         margin: 15px 0;
+         padding: 5px 0;
+     }
+     .preenchimento{
+        display: none;
+     }
+}
+
