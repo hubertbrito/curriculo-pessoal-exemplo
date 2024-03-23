@@ -60,6 +60,9 @@ img{
 .titulo-destaque{
     color: var(--cor-terciaria);
 }
+.titulo-sobre{
+    color: var(--cor-quaternaria);
+}
 
 .container-principal{
     max-width: 981px;
@@ -78,10 +81,11 @@ img{
     align-items: center;
 }
 .content{
-    width: 54%;
+    width: 57%;
     display: flex;
-    padding: 70px 26px 0px 0px;
+    padding: 70px 26px 0px 21px;
     flex-direction: column;
+    text-align: left;
 }
 .container-foto{
     position: absolute;
@@ -213,9 +217,8 @@ h1{
     }
     h1{
         font-size: 28px;
-        padding-bottom: 20px;
         margin-top: 0;
-        padding-top: 0;
+        padding: 0px 0px 20px 12px;
     }
     p{ 
         width: 100%;     
