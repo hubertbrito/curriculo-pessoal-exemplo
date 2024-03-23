@@ -125,8 +125,9 @@ h1{
 }
 
 .sub-titulo{
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 6px;
+    font-weight: 600;
     font-family: "krona One", sans-serif;
 }
 .div-links a{
@@ -134,7 +135,7 @@ h1{
     align-items:center ;
     justify-content: center;
     gap: 6px;
-    width: 100px;
+    width: 200px;
     font-size: 14px;
     font-weight: 800;
     padding: 10px 54px;
@@ -221,8 +222,8 @@ h1{
         text-align: left;
     }
     .div-links a{
-        gap: 8px;
-        width: 60%;
+        gap: 12px;
+        width: 70%;
     }
     .rodape{
         width: 100%;
