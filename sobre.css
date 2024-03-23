@@ -4,8 +4,7 @@
     --cor-secundaria:#f6f6f6;
     --cor-terciaria: #22d4fd;
     --cor-quaternaria: #2f4f4f;
-    --cor-alternativa: #152424 ;
-    --cor-enfase: #567878;
+    --cor-alternativa: #152424;
 }
 
 *{
@@ -14,15 +13,33 @@
     box-sizing: border-box;
 }
 body{
+    flex-direction: column;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     font-family: 'inter', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    background-color: #000000;
+
+
 }
 
 .topo{
-    max-width: 893px;
-    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 960px;
     padding-top: 16px;
+    padding-left: 48px;
+    margin: 0 auto;
+    gap: 10px;
+   
 
 }
 .topo-menu{
@@ -33,7 +50,7 @@ body{
     font-size: 16px;
     border-radius: 8px;
 }
-.topo-menu:hover{
+ .topo a:hover{
     background-color: var(--cor-quaternaria);
 }
 img{
@@ -44,70 +61,62 @@ img{
     color: var(--cor-terciaria);
 }
 
-.container-principal-sobre{
-    max-width: 894px;
-    margin: 0 auto;
-    padding: 80px 0px 5px 0px;
+.container-principal{
+    max-width: 981px;
+    margin: auto;
+    padding: 50px 30px 5px 30px;
     display: flex;
     margin-bottom: 60px;
 }
 .section-conteudo{
     position: relative;
-    padding: 1px;
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 960px;
     display: flex;
-    gap: 80px;
     box-sizing: border-box;
     align-items: center;
 }
-.titulo-sobre{
-    text-align: left;
-    margin-bottom: 25px;
-    color: var(--cor-enfase);
-}
 .content{
-    width: 60%;
+    width: 54%;
     display: flex;
-    padding: 0px 15px 0px 10px;
+    padding: 70px 26px 0px 0px;
     flex-direction: column;
 }
 .container-foto{
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 110px;
+    right: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.preenchimento{
-    background-color: var(--cor-primaria);
-    
-    width: 100%;
-}
 .content li{
+   width: 100%; 
    font-size: 12px;
    margin-left: 60px;
 }
 .content li p{
+   width: 100%; 
    font-size: 12px;
 }
 h3{
     margin: 10px;
-    font-size: 14px;
-    text-align: left;
+    font-size: 18px;
+}
+h3, h4{
+    padding: 4px 0;
 }
 h4{
     margin: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 h1{
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
 }
 .section-conteudo p{      
-    font-size: 18px;
+    font-size: 16px;
     margin: 15px 0;
     padding: 5px 0;
 }
@@ -139,16 +148,16 @@ h1{
     border-radius: 12px;
     color: var(--cor-secundaria);
     text-decoration: none;
-
 }
 .div-links a:hover{
     background-color: var(--cor-quaternaria);
 }
+
 .img-icone{
     width: 20px;
 }
 .rodape{
-    width: 100%;
+    width: 100vw;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     text-align: center;
@@ -160,96 +169,113 @@ h1{
     padding: 6px;
 }
 
-@media (max-width: 600px) {
-    .container-principal-sobre{
+@media (max-width: 640px) {
+
+    .container-principal{
         margin: 0 auto;
-        padding: 50px 0px 10px 10px;
-        width: 100vw;
+        padding: 15px 5px 15px 5px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
+        
     }
     .section-conteudo{
-        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        flex-direction: column-reverse;
         text-align: center;
-        width: 100vw;
+        padding: 5px;
     }
-    .titulo-sobre{
-        text-align: center;
+    .topo{
+        background-color: var(--cor-alternativa);
+        width: 100%;
+        justify-content: center;
+        padding: 8px 2px;
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+        gap: 60px;
+    }
+    .topo-menu{
+        font-size: 21px;
+    }
+    
+    img{
+        width: 252px;
+    }
+    .container-foto{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+    }
+    h1{
+        font-size: 28px;
+        padding-bottom: 20px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    p{ 
+        width: 100%;     
+        font-size: 16px;
+        margin: 15px 0;
+        padding-right: 20px;
     }
     .content{
         width: 100%;
         display: flex;
-        padding-right: 20px;
+        padding: 10px 0px 0px 0px;
         flex-direction: column;
-        
-
+        margin: auto;
     }
-    header{
-        background-color: var(--cor-alternativa);
-        width: 100vw;
-    }
-    .topo{
-        width: 100vw;
-        text-align: center;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        
-    }
-    .topo-menu{
-        font-size: 18px;
-    }
-    img{
-        width: 210px;
-    }
-    .container-foto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 12px;
-    }
-    h1{
-        font-size: 24px;
-    }
-    .section-conteudo p{      
-        font-size: 16px;
-        margin: 15px 0;
-        padding: 5px 1px;
-    }
-
     ul{
-        width: 90%;
-        padding-left: 30px;
+        width: 100%;
+        margin: 0 auto;
         text-align: left;
+        font-size: 20px;
+        
     }
-    .content{
-        width: 100vw;
-    }
-
     .content li{
-        font-size: 15px;
-        margin: 10px;
+        width: 80%; 
+        font-size: 16px;
+        margin-left: 60px;
+        padding: 3px 0;
      }
      .content li p{
-        font-size: 15px;
-        margin: 5px;
-     }
-     h3{
-         margin: 10px;
-         font-size: 18px;
-     }
-     h4{
-         margin: 5px;
-         font-size: 16px;
-     }
-    
-     .section-conteudo p{      
-         font-size: 18px;
-         margin: 15px 0;
-         padding: 5px 0;
-     }
-     .preenchimento{
-        display: none;
+        width: 95%; 
+        font-size: 16px;
      }
 }
+
+@media (max-width: 1040px){
+    .section-conteudo{
+        max-width: 780px;
+        gap: 40px;
+    }
+    .topo{
+        max-width: 780px;
+        margin: 0 auto;
+        padding-top: 16px;
+    
+    }
+}
+
+@media (max-width: 848px){
+    .section-conteudo{
+        max-width: 600px;
+        gap: 40px;
+    }
+    .topo{
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 16px;
+    
+    }
+     
+   
+}
+
+
 
