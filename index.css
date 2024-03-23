@@ -152,7 +152,7 @@ h1{
     width: 20px;
 }
 .rodape{
-    width: 100vw;
+    width: 100%;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     text-align: center;
@@ -162,6 +162,7 @@ h1{
 .rodape p{
     margin: 0;
     padding: 6px;
+    width: 100%;
 }
 
 @media (max-width: 640px) {
@@ -169,7 +170,7 @@ h1{
     .container-principal{
         margin: 0;
         padding: 15px 5px 15px 5px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
@@ -177,7 +178,7 @@ h1{
     }
     .section-conteudo{
         margin: 0 auto;
-        width: 100vw;
+        width: 100%;
         flex-direction: column-reverse;
         text-align: center;
         padding: 20px;
