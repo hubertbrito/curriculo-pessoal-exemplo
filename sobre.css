@@ -80,7 +80,7 @@ img{
     align-items: center;
 }
 .content{
-    width: 57%;
+    width: 60%;
     display: flex;
     padding: 70px 26px 0px 21px;
     flex-direction: column;
@@ -89,10 +89,11 @@ img{
 .container-foto{
     position: absolute;
     top: 110px;
-    right: 27px;
+    right: 63px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+ul{
+   width: 90%; 
 }
 .content li{
    width: 100%; 
@@ -175,8 +176,8 @@ h1{
 @media (max-width: 640px) {
 
     .container-principal{
-        margin: 0 auto;
-        padding: 15px 5px 15px 5px;
+        margin: 0;
+        padding: 24px 0px 15px 0px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -188,7 +189,7 @@ h1{
         width: 100%;
         flex-direction: column-reverse;
         text-align: center;
-        padding: 5px;
+        padding: 5px 0px 5px 0px ;
     }
     .topo{
         background-color: var(--cor-alternativa);
@@ -212,12 +213,17 @@ h1{
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-top: 90px;
+        align-items: center;
+        padding-top: 87px;
+        padding-left: 9px;
     }
     h1{
         font-size: 28px;
         margin-top: 0;
-        padding: 0px 0px 20px 12px;
+        padding: 0px;
+    }
+    h3{
+        padding-left: 0px;
     }
     p{ 
         width: 100%;     
@@ -227,17 +233,13 @@ h1{
     }
     .content{
         width: 100%;
-        display: flex;
-        padding: 10px 0px 0px 0px;
-        flex-direction: column;
-        margin: auto;
+        text-align: left;
     }
     ul{
         width: 100%;
         margin: 0 auto;
         text-align: left;
-        font-size: 20px;
-        
+        font-size: 20px;  
     }
     .content li{
         width: 80%; 
